@@ -1,0 +1,159 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Contacto | Estudios Penales Integrados"
+  description="Comuníquese con Estudios Penales Integrados."
+>
+
+<Header />
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Contacto</h1>
+    <p>
+      Estamos disponibles para responder sus consultas y brindarle el asesoramiento jurídico que necesita.
+    </p>
+  </div>
+</section>
+
+<section>
+
+<div class="container contact-grid">
+
+<div>
+
+<h2>Información de contacto</h2>
+
+<p>
+
+<strong>Correo electrónico</strong><br>
+
+estudiospenalesintegrados@gmail.com
+
+</p>
+
+<p>
+
+<strong>WhatsApp</strong><br>
+
+<a
+class="whatsapp-link"
+href="https://wa.me/549XXXXXXXXXX"
+target="_blank"
+>
+
+Enviar mensaje
+
+</a>
+
+</p>
+
+<p>
+
+<strong>Domicilio</strong><br>
+
+(Completar)
+
+</p>
+
+<p>
+
+<strong>Horario</strong><br>
+
+Lunes a Viernes · 9:00 a 18:00 hs
+
+</p>
+
+</div>
+
+<div>
+
+<form
+name="contacto"
+method="POST"
+data-netlify="true"
+netlify
+>
+
+<input
+type="hidden"
+name="form-name"
+value="contacto"
+/>
+
+<input
+type="text"
+name="nombre"
+placeholder="Nombre y Apellido"
+required
+/>
+
+<input
+type="email"
+name="email"
+placeholder="Correo electrónico"
+required
+/>
+
+<input
+type="text"
+name="telefono"
+placeholder="Teléfono"
+/>
+
+<textarea
+name="mensaje"
+rows="6"
+placeholder="Escriba su consulta..."
+required
+></textarea>
+
+<button
+type="submit"
+class="btn"
+>
+
+Enviar consulta
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="text-center">
+
+Nuestra ubicación
+
+</h2>
+
+<div class="map-container">
+
+<iframe
+src="https://www.google.com/maps?q=Buenos+Aires&output=embed"
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade"
+></iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<Footer />
+
+</BaseLayout>

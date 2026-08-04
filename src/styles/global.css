@@ -211,3 +211,108 @@ section{
 .mb-2{margin-bottom:2rem;}
 .mb-3{margin-bottom:3rem;}
 .mb-4{margin-bottom:4rem;}
+
+
+/* ===========================================================
+   HEADER
+   =========================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(0,0,0,.06);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:92px;
+
+}
+
+.logo img{
+
+    height:72px;
+
+    width:auto;
+
+    transition:.30s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* MENU */
+
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.menu a{
+
+    position:relative;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    transition:.30s;
+
+}
+
+.menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.30s;
+
+}
+
+.menu a:hover{
+
+    color:var(--secondary);
+
+}
+
+.menu a:hover::after{
+
+    width:100%;
+
+}

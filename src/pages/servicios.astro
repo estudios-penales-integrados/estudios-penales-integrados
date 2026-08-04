@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import CTA from "../components/CTA.astro";
+import Footer from "../components/Footer.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<BaseLayout
+  title="Servicios | Estudios Penales Integrados"
+  description="Conocé los servicios jurídicos que ofrece Estudios Penales Integrados."
+>
+
+<Header />
+
+<section class="page-hero">
+
+  <div class="container">
+
+    <h1>Servicios</h1>
+
+    <p>
+
+      Brindamos asesoramiento jurídico especializado en Derecho Penal,
+      con un enfoque estratégico y personalizado para cada cliente.
+
+    </p>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="services-grid">
+
+      <ServiceCard
+        title="Defensa Penal"
+        text="Representación en todas las etapas del proceso penal, garantizando una defensa técnica integral."
+      />
+
+      <ServiceCard
+        title="Delitos Económicos"
+        text="Asistencia jurídica en investigaciones y procesos relacionados con delitos económicos y financieros."
+      />
+
+      <ServiceCard
+        title="Compliance Penal"
+        text="Diseño e implementación de programas de integridad y prevención de riesgos penales."
+      />
+
+      <ServiceCard
+        title="Asesoramiento Empresarial"
+        text="Consultoría jurídica preventiva para empresas y organizaciones."
+      />
+
+      <ServiceCard
+        title="Defensa en Juicio"
+        text="Representación ante tribunales en procesos penales complejos."
+      />
+
+      <ServiceCard
+        title="Consultoría Estratégica"
+        text="Análisis jurídico y elaboración de estrategias de actuación para personas y empresas."
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<CTA />
+
+<Footer />
+
+</BaseLayout>

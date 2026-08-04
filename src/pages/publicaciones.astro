@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import CTA from "../components/CTA.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Publicaciones | Estudios Penales Integrados"
+  description="Artículos, novedades jurídicas y publicaciones de Estudios Penales Integrados."
+>
+
+<Header />
+
+<section class="page-hero">
+
+  <div class="container">
+
+    <h1>Publicaciones</h1>
+
+    <p>
+
+      Compartimos artículos, novedades legislativas,
+      análisis de jurisprudencia y comentarios sobre
+      temas de actualidad en Derecho Penal.
+
+    </p>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="posts-grid">
+
+      <article class="post-card">
+
+        <span class="post-category">Derecho Penal</span>
+
+        <h3>Próximamente</h3>
+
+        <p>
+
+          Muy pronto comenzaremos a publicar artículos,
+          análisis jurídicos y novedades relevantes.
+
+        </p>
+
+      </article>
+
+      <article class="post-card">
+
+        <span class="post-category">Compliance</span>
+
+        <h3>Espacio reservado</h3>
+
+        <p>
+
+          Esta sección estará destinada a programas de
+          integridad, responsabilidad penal empresaria
+          y prevención de riesgos.
+
+        </p>
+
+      </article>
+
+      <article class="post-card">
+
+        <span class="post-category">Jurisprudencia</span>
+
+        <h3>Actualizaciones</h3>
+
+        <p>
+
+          Publicaremos comentarios sobre fallos relevantes
+          y novedades de interés profesional.
+
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<CTA />
+
+<Footer />
+
+</BaseLayout>

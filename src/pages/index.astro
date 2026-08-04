@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import CTA from "../components/CTA.astro";
+import Footer from "../components/Footer.astro";
+
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<BaseLayout
+  title="Estudios Penales Integrados"
+  description="Defensa Penal Estratégica. Asesoramiento jurídico integral."
+>
+
+<Header />
+
+<Hero />
+
+<section>
+
+    <div class="container">
+
+        <h2 class="text-center">
+
+            Nuestros Servicios
+
+        </h2>
+
+        <div class="services-grid">
+
+            <ServiceCard
+                title="Defensa Penal"
+                text="Asistencia integral en todas las etapas del proceso penal."
+            />
+
+            <ServiceCard
+                title="Delitos Económicos"
+                text="Representación y asesoramiento en causas complejas."
+            />
+
+            <ServiceCard
+                title="Compliance"
+                text="Programas de integridad y prevención para empresas."
+            />
+
+            <ServiceCard
+                title="Asesoramiento Empresarial"
+                text="Consultoría preventiva y defensa jurídica."
+            />
+
+        </div>
+
+    </div>
+
+</section>
+
+<CTA />
+
+<Footer />
+
+</BaseLayout>

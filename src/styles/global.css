@@ -656,3 +656,108 @@ font-size:2.4rem;
     margin-bottom:15px;
 
 }
+
+/* ===========================================================
+   CONTACTO
+   =========================================================== */
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:start;
+
+}
+
+.contact-grid form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.contact-grid input,
+.contact-grid textarea{
+
+padding:16px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-family:inherit;
+
+font-size:1rem;
+
+}
+
+.contact-grid textarea{
+
+resize:vertical;
+
+}
+
+.whatsapp-link{
+
+display:inline-block;
+
+margin-top:8px;
+
+padding:12px 22px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:999px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.whatsapp-link:hover{
+
+opacity:.9;
+
+}
+
+.map-container{
+
+margin-top:40px;
+
+border-radius:16px;
+
+overflow:hidden;
+
+box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+}
+
+.map-container iframe{
+
+width:100%;
+
+height:450px;
+
+border:0;
+
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

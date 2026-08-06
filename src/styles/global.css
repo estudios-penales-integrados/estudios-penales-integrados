@@ -1115,6 +1115,8 @@ text-align:center;
 }
 
 .footer-text{
+     margin:auto;
+}
 
    /* ===========================================================
    WHATSAPP FLOAT
@@ -1248,9 +1250,3 @@ bottom:18px;
 
 }
 
-}
-margin:auto;
-
-}
-
-}

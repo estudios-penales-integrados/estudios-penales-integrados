@@ -1,29 +1,39 @@
+---
+import { SITE } from "../config/site";
+
+const whatsappURL = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
+  SITE.whatsappMessage
+)}`;
+---
+
 <section class="cta">
 
-<div class="container">
+  <div class="container">
 
-<h2>
+    <h2>
 
-¿Necesita asesoramiento jurídico?
+      ¿Necesita asesoramiento jurídico?
 
-</h2>
+    </h2>
 
-<p>
+    <p>
 
-Nuestro equipo está preparado para brindarle una respuesta rápida,
-confidencial y profesional.
+      Nuestro equipo está preparado para brindarle una respuesta rápida,
+      confidencial y profesional.
 
-</p>
+    </p>
 
-<a
-href="/contacto"
-class="btn"
->
+    <a
+      href={whatsappURL}
+      class="btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
 
-Solicitar una consulta
+      Solicitar una consulta
 
-</a>
+    </a>
 
-</div>
+  </div>
 
 </section>

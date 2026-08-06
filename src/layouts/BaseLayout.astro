@@ -26,6 +26,42 @@ const canonicalURL = new URL(Astro.url.pathname, SITE.url).toString();
 
 <head>
 
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+
+    name: SITE.name,
+
+    description: SITE.description,
+
+    url: SITE.url,
+
+    email: SITE.email,
+
+    areaServed: [
+      "Viedma",
+      "Río Negro",
+      "Provincia de Buenos Aires",
+      "Argentina"
+    ],
+
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: SITE.city,
+      addressRegion: SITE.province,
+      addressCountry: SITE.country
+    },
+
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+54 9 2920 27-1591",
+      contactType: "customer service"
+    }
+  })}
+></script>
+
   <meta charset="UTF-8" />
 
   <meta
@@ -95,7 +131,7 @@ const canonicalURL = new URL(Astro.url.pathname, SITE.url).toString();
 
   <meta
     property="og:image"
-    content={`${SITE.url}/logo.png`}
+    content="Logo de Estudios Penales Integrados"
   />
 
   <!-- Twitter -->

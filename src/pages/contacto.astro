@@ -1,5 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE } from "../config/site";
+
+const whatsappURL = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
+  SITE.whatsappMessage
+)}`;
 ---
 
 <BaseLayout
@@ -18,135 +23,136 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <section>
 
-<div class="container contact-grid">
+  <div class="container contact-grid">
 
-<div>
+    <div>
 
-<h2>Información de contacto</h2>
+      <h2>Información de contacto</h2>
 
-<p>
+      <p>
 
-<strong>Correo electrónico</strong><br>
+        <strong>Correo electrónico</strong><br>
 
-estudiospenalesintegrados@gmail.com
+        estudiospenalesintegrados@gmail.com
 
-</p>
+      </p>
 
-<p>
+      <p>
 
-<strong>WhatsApp</strong><br>
+        <strong>WhatsApp</strong><br>
 
-<a
-class="whatsapp-link"
-href="https://wa.me/549XXXXXXXXXX"
-target="_blank"
->
+        <a
+          class="whatsapp-link"
+          href={whatsappURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
 
-Enviar mensaje
+          Enviar mensaje por WhatsApp
 
-</a>
+        </a>
 
-</p>
+      </p>
 
-<p>
+      <p>
 
-<strong>Domicilio</strong><br>
+        <strong>Ubicación</strong><br>
 
-(Completar)
+        Viedma, Río Negro
 
-</p>
+      </p>
 
-<p>
+      <p>
 
-<strong>Horario</strong><br>
+        <strong>Horario</strong><br>
 
-Lunes a Viernes · 9:00 a 18:00 hs
+        Lunes a Viernes · 9:00 a 18:00 hs
 
-</p>
+      </p>
 
-</div>
+    </div>
 
-<div>
+    <div>
 
-<form
-name="contacto"
-method="POST"
-data-netlify="true"
-netlify
->
+      <form
+        name="contacto"
+        method="POST"
+        data-netlify="true"
+        netlify
+      >
 
-<input
-type="hidden"
-name="form-name"
-value="contacto"
-/>
+        <input
+          type="hidden"
+          name="form-name"
+          value="contacto"
+        />
 
-<input
-type="text"
-name="nombre"
-placeholder="Nombre y Apellido"
-required
-/>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre y Apellido"
+          required
+        />
 
-<input
-type="email"
-name="email"
-placeholder="Correo electrónico"
-required
-/>
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
 
-<input
-type="text"
-name="telefono"
-placeholder="Teléfono"
-/>
+        <input
+          type="text"
+          name="telefono"
+          placeholder="Teléfono"
+        />
 
-<textarea
-name="mensaje"
-rows="6"
-placeholder="Escriba su consulta..."
-required
-></textarea>
+        <textarea
+          name="mensaje"
+          rows="6"
+          placeholder="Escriba su consulta..."
+          required
+        ></textarea>
 
-<button
-type="submit"
-class="btn"
->
+        <button
+          type="submit"
+          class="btn"
+        >
 
-Enviar consulta
+          Enviar consulta
 
-</button>
+        </button>
 
-</form>
+      </form>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
 <section>
 
-<div class="container">
+  <div class="container">
 
-<h2 class="text-center">
+    <h2 class="text-center">
 
-Nuestra ubicación
+      Nuestra ubicación
 
-</h2>
+    </h2>
 
-<div class="map-container">
+    <div class="map-container">
 
-<iframe
-src="https://www.google.com/maps?q=Buenos+Aires&output=embed"
-loading="lazy"
-allowfullscreen
-referrerpolicy="no-referrer-when-downgrade"
-></iframe>
+      <iframe
+        src="https://www.google.com/maps?q=Viedma,Río+Negro&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 

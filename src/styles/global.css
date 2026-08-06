@@ -1256,3 +1256,56 @@ bottom:18px;
     height:34px;
     fill:#fff;
 }
+
+
+/* ==========================================
+   HERO RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+line-height:1.1;
+
+}
+
+.hero p{
+
+font-size:1.1rem;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-image img{
+
+max-width:240px;
+
+margin:auto;
+
+display:block;
+
+}
+
+}

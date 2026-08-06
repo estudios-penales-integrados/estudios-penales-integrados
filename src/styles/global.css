@@ -1117,6 +1117,7 @@ text-align:center;
 .footer-text{
      margin:auto;
 }
+}
 
    /* ===========================================================
    WHATSAPP FLOAT
@@ -1249,4 +1250,9 @@ right:18px;
 bottom:18px;
 
 }
-
+}
+.whatsapp-float svg{
+    width:34px;
+    height:34px;
+    fill:#fff;
+}
